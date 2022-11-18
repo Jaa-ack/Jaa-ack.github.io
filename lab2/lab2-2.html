@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		.label {
+			background-color: tomato;
+			color: white;
+			padding: 7px;
+		}
+		span {
+			background-color: yellow;
+			color: black;
+			padding: 7px;
+		}
+		.extra span{
+			color: inherit;
+		}
+		#submit{
+			background-color: Blue;
+			color: black;
+			padding: 10px;
+		}
+		#reset { background-color: red;	}
+		#headline {
+			background-color: purple;
+			color: !important;
+			padding: 50px;
+		}
+		h1, em {text-decoration: underline;}
+		h4 em {text-decoration: line-through}
+		body{
+			background-color: linen;
+		}
+		h4 { font-family: tahoma, critter, fixedsys; }
+		label { font-size: 15 pt; font weight: 900; color: purple; }
+	</style>
+	
+</head>
+<body>
+
+	<p><h1 style="color:red;text-align:center;"><b>New HTML5 Input Type Demo</b></h1></p>
+	<p><h4 id="headline"><em>This form demonstrates the new HTML5 input types and thee placeholder, required and autofocus attributes.</em></h4></p>
+
+	<p><label class="label">Color:
+		<input type ="color" autofocus />
+		<em>(Hexadecimal code such as #ADD8E6)</em>
+	</label></p>
+	<form action ="/action_page.php">
+		<p><label class="label">Dates:
+			<input type="date" id="date" name="date">
+			<span>(yyyy-mm-dd)</span>
+		</label></p>
+		<p><label class="label">Email:
+			<input type="email" name="email" placeholder="name@domail.com" require>
+			<em>(name@domain.com)</em>
+		</label></p>
+		<p><label class="label" style= "color:green" class="extra">Number:
+			<input type="number" id="quantity" name="quantity" min="0" max="7" value="4">
+			<span>(Enter a number between 0 and 7)</span>
+		</label></p>
+		<p><label class="label">Range:
+			0<input type="range" id="vol" name="vol" min="0" max="20">20
+		</label></p>
+		<p><label class="label">Search:
+			<input type="search" id="search2" name="search" placeholder="search query">
+		</label></p>
+		<p><label class="label">Time:
+			<input type="time" id="appt" mame="appt">
+			<em>(hh:mm)</em>
+		</label></p>
+		<input type="submit" value="Submit" ID="submit">
+		<input type="reset" value="Clear" ID= "reset">
+	</form>
+
+</body>
+</html>
