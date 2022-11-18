@@ -4,45 +4,46 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
+	<style>
+		# headline { 
+			font-weight: 1000pt;
+			color: yellow;
+		 }
+		.title {
+		 	font-weight: 500pt;
+		 	font-size: large;
+		 	color: blue;
+		 }
+		.text {
+			background: yellow;
+			color: white;
+			padding: 10px;
+		}
+		span{
+			color: red;
+			text-decoration: underline;
+		}
+		.extra span{
+			color: inherit;
+		}
+
+	</style>
 </head>
 <body>
-	<p><h1><b>New HTML5 Input Type Demo</b></h1></p>
-	<p><h4>This form demonstrates the new HTML5 input types and thee placeholder, required and autofocus attributes.</h4></p>
+	<p><h1 id="headline">Personal Image</h1></p>
+	<img src= "photo.jpg" alt = "error"
+		width = "150px" height = "150px"/>
 
-	<p><label>Color:
-		<input type ="color" autofocus />
-		(Hexadecimal code such as #ADD8E6)
-	</label></p>
-	<form action ="/action_page.php">
-		<p><label>Dates:
-			<input type="date" id="date" name="date">(yyyy-mm-dd)
-		</label></p>
-		<p><label>Email:
-			<input type="email" name="email" placeholder="name@domail.com" require>
-			(name@domain.com)
-		</label></p>
-		<p><label>Number:
-			<input type="number" id="quantity" name="quantity" min="0" max="7" value="4">
-			(Enter a number between 0 and 7)
-		</label></p>
-		<p><label>Range:
-			0<input type="range" id="vol" name="vol" min="0" max="20">20
-		</label></p>
-		<p><label>Search:
-			<input type="search" id="search2" name="search" placeholder="search query">
-		</label></p>
-		<p><label>Time:
-			<input type="time" id="appt" mame="appt">
-			(hh:mm)
-		</label></p>
-		<input type="submit" value="Submit">
-		<input type="reset" value="Clear">
-	</form>
+	<p class="title">My Name</p>
+	<p><h7>楊智凱/Jack/Wulaw<span>(我的阿美族名)</span></h7></p>
 
+	<p class="title">My Birthday</p>
+	<p style="color:rosybrown; class="extra">My birthday is <span>2003/12/3</span></p>
 
-
-
-
+	<a href="lab2.html">Lab2</a>
+	<a href="lab2-2.html">Lab2-2</a>							 
+	
+	
 
 
 </body>
