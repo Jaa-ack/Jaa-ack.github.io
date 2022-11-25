@@ -1,0 +1,51 @@
+.navbar{
+	border-top: 2px solid rosybrown;
+	background-color: white;
+	width: 10em;
+	color: black;
+}
+nav{
+	font-weight: bold;
+	color:lightskyblue;
+	border: 2px solid sandybrown;
+	text-aligh:center;
+	width:10em;
+	background-color:saddlebrown;
+}
+nav ul{
+	display:none;
+	list-style: none;
+	padding:0;
+	margin-top: 1em;
+  	margin-left: 0;
+  	position: absolute;
+  	left: 13ex;
+  	top: -5ex;
+  	width:90px;
+}
+nav:hover ul{display: block;}
+nav ul li{
+	padding-top:50px;
+	padding-botton:50px;
+	margin-right:100px;
+	margin-left:100x;
+	border-right-style: solid;
+	background-color:greenyellow;
+}
+nav ul li:hover{ background-color:sandybrown;}
+
+body{
+	padding-top:50px;
+	padding-bottom:50px;
+	padding-right:100px;
+	padding-left:100px;
+	font-family: inherit, initial;
+	background-color:hotpink;
+	color: black;
+}
+
+@media screen and (min-width: 1580px){
+	body{
+		background-color:darkred;
+	}
+}
