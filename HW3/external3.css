@@ -1,13 +1,16 @@
-div {
-	float:inherit;
-	float:right;
-}
-input {
-	border:2px solid black;
+p {
 	margin-top:2%;
 	margin-bottom:2%;
-	margin-right:5%;
-	margin-left:5%;
+	margin-right auto
+	margin-left auto
+	float: left;
+}
+div {
+	margin-top:2%;
+	margin-bottom:2%;
+	margin-right:1%;
+	margin-left:1%;
+	float: left;
 }
 label{
 	color:red;
