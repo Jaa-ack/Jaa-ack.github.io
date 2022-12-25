@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h1>JS Calculator</h1>
+	<form name="form" id='form'>Number 1
+ 		<input type="text" id="num1"/><br>
+ 		Number 2
+		<input type="text" id="num2"/><br>
+	</form>
+	<label>Operate way?</label>
+		<select id="operate">
+   		<option value="+">+</option>
+   		<option value="-">-</option>
+    	<option value="*">*</option>
+    	<option value="/">/</option>
+    	</select><br>
+    <form>	
+		<input type='button' name='operater' value='Add' onclick='operate();' />
+		<br><label>Result = </label>
+    	<label id="ans">0</label>
+	</form>
+	<br><a href="bonusssss.html">Bonus</a>
+
+	<script>
+		function operate() {
+			operater = document.getElementById("operate");
+			getInput = document.getElementById("form");
+			number1 = parseInt(getInput[0].value);
+		    number2 = parseInt(getInput[1].value);
+		    result = document.getElementById("ans");
+		    plus()
+		    if(operater.value == "+"){
+		    	plus();
+		    }else if(operater.value == "-"){
+		    	minus();
+		    }else if(operater.value == "*"){
+		    	multiple();
+		    }else{
+		    	dividend();
+		    }
+		}
+
+		function plus(){
+			result.innerHTML = number1 + number2;
+		}
+		function minus(){
+			result.innerHTML = number1 - number2;
+		}
+		function multiple(){
+			result.innerHTML = number1 * number2;
+		}
+		function dividend(){
+			result.innerHTML = number1 / number2;
+		}
+
+	</script>
+
+
+</body>
+</html>
